@@ -1,0 +1,18 @@
+@font-face { font-family: "Lantern Display"; src: url("../fonts/display.woff2") format("woff2"); font-weight: 200 800; font-display: swap; }
+:root { --crust: #8a4b24; --crumb: #fbf3e6; --ink: #2f2a26; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--crumb); color: var(--ink); font-family: system-ui, sans-serif; }
+h1, h2, .brand { font-family: "Lantern Display", system-ui, sans-serif; letter-spacing: -0.01em; }
+.top { display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; background: var(--ink); color: var(--crumb); }
+.top a { color: inherit; text-decoration: none; margin-left: 16px; }
+.brand { font-weight: 800; font-size: 1.25rem; margin-left: 0 !important; }
+.menu { display: none; }
+.hero { position: relative; }
+.hero img { width: 100%; height: auto; display: block; }
+.hero .words { position: absolute; left: 6%; bottom: 12%; max-width: 520px; color: #fff; }
+.hero h1 { font-size: 3.5rem; margin: 0 0 12px; }
+.button { display: inline-block; background: var(--crust); color: #fff; padding: 12px 20px; border-radius: 999px; text-decoration: none; }
+.oven, .code, .page { max-width: 760px; margin: 48px auto; padding: 0 24px; }
+video, .page img { max-width: 100%; height: auto; border-radius: 16px; }
+.foot { text-align: center; padding: 32px; opacity: 0.7; }
+@media (max-width: 640px) { .menu { display: inline-block; } nav { display: none; } nav.open { display: flex; flex-direction: column; } .hero h1 { font-size: 2.2rem; } }
